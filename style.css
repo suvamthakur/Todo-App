@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #6585F6;
+}
+h1 {
+    font-weight: 600;
+}
+input {
+    font-weight: 500;
+}
+
+/* Task adder box/input field */
+.container {
+    background-color: #f3f3f3;
+    width: 500px;
+    max-width: 90%;
+    height: 80vh;
+    margin: 50px auto;
+    padding: 3%;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.add-task {
+    flex: 1;
+    margin-right: 5px;
+    font-size: 1rem;
+    padding: 6px 10px;
+    width: calc(100% - 1px);
+    border: 1px solid #bbbbbb;  
+    border-radius: 3px;
+    background-color: transparent;
+}
+.add-task:focus {
+    outline: none;
+    border-color: #0a6ff3;
+}
+.add-btn {
+    background-color: #0a6ff3;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 3px;
+}
+.add-btn:hover {
+    background-color: #0e68df;
+}
+.task-container {
+    display: flex;
+    padding-top: 6px;
+}
+
+/* New taskbox/container */
+.task-box {
+    display: flex;
+    width: 100%;
+    margin-right: 5px;
+}
+.task {
+    flex: 1;
+    font-size: 1rem;
+    padding: 6px 10px;
+    width: calc(100% - 1px);
+    background-color: #e0e0e0;
+    border: none;
+    color: #302f2f;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.task:focus {
+    outline: none;
+}
+.edit-btn {
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    color: #505050;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #e0e0e0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.edit-btn:hover {
+    color: #0a6ff3;
+}
+.delete-btn {
+    background-color: red;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 3px;
+}
+.delete-btn:hover {
+    background-color: #e70303;
+}
+
+/* @media (max-width: ) {
+    
+} */
